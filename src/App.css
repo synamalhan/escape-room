@@ -1,38 +1,93 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  background-image: radial-gradient(circle at center, #111, #000 80%);
+  height: 100vh;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+.room-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.door-image {
+  width: 500px;
+  margin: 20px 0;
+  filter: brightness(0.6);
+}
+
+.input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: darkred;
   color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: crimson;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.riddle {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: limegreen;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.clue {
+  margin-top: 10px;
+  color: yellow;
+  font-weight: bold;
+}
+
+.danger {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.inventory {
+  border: 1px solid #444;
+  padding: 10px;
+  background: #111;
+  color: white;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.inventory ul {
+  list-style: none;
+  padding: 0;
+}
+.escape-complete {
+  text-align: center;
+  color: #fff;
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
 }
